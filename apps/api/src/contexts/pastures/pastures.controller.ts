@@ -1,9 +1,14 @@
 import { Controller, Get } from "@nestjs/common";
-import { ApiOkResponse, ApiTags } from "@nestjs/swagger";
+import { ApiOkResponse, ApiProperty, ApiTags } from "@nestjs/swagger";
 
 class PastureListItemDto {
+  @ApiProperty({ example: "p1" })
   id!: string;
+
+  @ApiProperty({ example: "Pasto Norte" })
   name!: string;
+
+  @ApiProperty({ enum: ["active", "inactive"], example: "active" })
   status!: "active" | "inactive";
 }
 

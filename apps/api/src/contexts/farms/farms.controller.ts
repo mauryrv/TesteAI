@@ -1,9 +1,14 @@
 import { Controller, Get } from "@nestjs/common";
-import { ApiOkResponse, ApiTags } from "@nestjs/swagger";
+import { ApiOkResponse, ApiProperty, ApiTags } from "@nestjs/swagger";
 
 class FarmListItemDto {
+  @ApiProperty({ example: "f1" })
   id!: string;
+
+  @ApiProperty({ example: "Fazenda Boa Vista" })
   name!: string;
+
+  @ApiProperty({ example: "America/Sao_Paulo" })
   timezone!: string;
 }
 
