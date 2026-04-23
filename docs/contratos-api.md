@@ -8,8 +8,9 @@
 
 ## Documentação viva
 
-- Fonte da verdade: [preencher: OpenAPI gerado em build, arquivo YAML, etc.].
-- URL pública da doc em dev: [preencher].
+- Fonte da verdade: **OpenAPI 3.x** gerado em runtime via **NestJS Swagger**.
+- Swagger UI (dev): `/api/docs`
+- OpenAPI JSON (dev): `/api/docs-json`
 
 ## Convenções REST
 
